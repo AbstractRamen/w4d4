@@ -1,0 +1,16 @@
+<h1> This is the new session page (sign in) </h1>
+
+<p> <%= flash[:errors] %> </p>
+
+<form class='form' action='<%= sessions_url%>' method='post'>
+  <label for='email'>Email</label>
+  <input id='email' name='user[email]' type='text'><br>
+
+  <label for='password'>Password</label>
+  <input id='password' name='user[password]' type='text'><br>
+
+  <input type='submit' value='Log in'>
+
+</form>
+
+<p> No account? Sign up <a href='<%=new_user_url%>'>here!</a> </p>

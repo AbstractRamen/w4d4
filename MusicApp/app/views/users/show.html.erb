@@ -1,0 +1,8 @@
+<h1> This is the user profile page for <%= @user.email %></h1>
+
+<p> <%= flash[:notice] %> </p>
+
+<form action='<%=session_url%>' method='post'>
+  <input type='hidden' name="_method" value='delete'/>
+  <input type='submit' value='Sign out'/>
+</form>

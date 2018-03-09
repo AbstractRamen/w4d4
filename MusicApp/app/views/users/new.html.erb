@@ -1,0 +1,14 @@
+<h1> This is the new user page (sign up) </h1>
+
+<p> <%= flash.now[:errors] %> </p>
+
+<form class='form' action='<%= users_url %>' method='post'>
+  <label for='email'>Email</label>
+  <input id='email' name='user[email]' type='text'><br>
+
+  <label for='password'>Password</label>
+  <input id='password' name='user[password]' type='text'><br>
+
+  <input type='submit' value='Create account'>
+
+</form>
